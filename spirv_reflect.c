@@ -2552,6 +2552,8 @@ static SpvReflectResult ParseEntryPoints(Parser* p_parser, SpvReflectShaderModul
       case SpvExecutionModelClosestHitNV           : p_entry_point->shader_stage = SPV_REFLECT_SHADER_STAGE_CLOSEST_HIT_BIT_NV; break;
       case SpvExecutionModelMissNV                 : p_entry_point->shader_stage = SPV_REFLECT_SHADER_STAGE_MISS_BIT_NV; break;
       case SpvExecutionModelCallableNV             : p_entry_point->shader_stage = SPV_REFLECT_SHADER_STAGE_CALLABLE_BIT_NV; break;
+      case SpvExecutionModelTaskNV                 : p_entry_point->shader_stage = SPV_REFLECT_SHADER_STAGE_TASK_BIT_NV; break;
+      case SpvExecutionModelMeshNV                 : p_entry_point->shader_stage = SPV_REFLECT_SHADER_STAGE_MESH_BIT_NV; break;
     }
 
     ++entry_point_index;
